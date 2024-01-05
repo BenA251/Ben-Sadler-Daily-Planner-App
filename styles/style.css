@@ -37,11 +37,6 @@ header {
   border-top: 1px solid white;
 }
 
-.hour {
-  background-color: #ffffff;
-  color: #000000;
-  border-top: 1px dashed #000000;
-}
 
 .past {
   background-color: #d3d3d3;
@@ -58,15 +53,73 @@ header {
   color: white;
 }
 
+
+
+
+
+
+
+
+/*custom CSS below new, modified or related */
+
+.container {
+display: flex;
+flex-direction: column;
+padding: 30px;
+width: 100%
+}
+
+.individualrow {
+  display: flex;
+  width: 100%;
+  height: 80px;
+  border-top: 1px solid white;
+}
+
+.timebox {
+  display: flex;
+  width: 10%;
+  height: 100%;
+  border-top: 1px dashed #000000;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 5px;
+}
+
+.activitybox {
+  display: flex;
+  width: 80%;
+  height: 100%;
+}
+
+.savebox {
+  display: flex;
+  width: 10%;
+  height: 100%;
+  padding: 20px 60px;
+  border-top: 1px #ffffff;
+}
+
 .saveBtn {
+  display: flex;
   border-left: 1px solid black;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   background-color: #06aed5;
   color: white;
+  display: flex;
+  width: 15%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
 }
 
-.saveBtn i:hover {
-  font-size: 20px;
-  transition: all 0.3s ease-in-out;
+.saveBtn img {
+height: 30px;
+width: 30px;
+}
+
+.individualrow input {
+text-align: center
+
 }
