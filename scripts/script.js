@@ -36,7 +36,8 @@ function activitySave(ID) {
 
 function getLocalStorage() {
 for (let i = 0; i < divIdArr.length; i++) {
-document.getElementById(divIdArr[i]) = localStorage.getItem(divIdArr[i]);
+var inputContent = localStorage.getItem(divIdArr[i]);
+$("#"+ divIdArr[i]).attr('value', inputContent)
 }
 }
 
@@ -50,7 +51,6 @@ function pageFunction() {
   setInterval(updateCells, 1000);
   $("#currentDay").text(today.format("dddd,"+" "+"MMMM DD")+ OrdinalIndicator(today.format("D")));
   getLocalStorage();
-
 }
 
 
