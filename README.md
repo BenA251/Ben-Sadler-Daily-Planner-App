@@ -44,10 +44,15 @@ Website Repository: https://github.com/BenA251/Ben-Sadler-Daily-Planner-App
 
 ## Usage 
 
+To use daily planner it is possible to input activities for each hour and save to local storage
+On page using save button. If browser is closed and reopened the activities will remain. It is possible to overwrite existing activities by inputting and saving new value.
+
+Page is updated automatically such that color coding of cells change according to current hour.
+
 
 <strong>Screenshot:</strong> <br>
 
-![alt text](./assets/Screenshot.png)
+![alt text](./images/Screenshot.png)
 
 
 ## Credits
