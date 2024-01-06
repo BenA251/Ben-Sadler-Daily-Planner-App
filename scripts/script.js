@@ -26,11 +26,31 @@ function updateCells() {
   }
 }
 
+
+//functions for saving and retrieving to / from local storage.
+
+function activitySave(ID) {
+  localStorage.setItem(ID, document.getElementById(ID).value);
+}
+
+
+function getLocalStorage() {
+for (let i = 0; i < divIdArr.length; i++) {
+document.getElementById(divIdArr[i]) = localStorage.getItem(divIdArr[i]);
+}
+}
+
+
+
+
+
 //top level function which runs upon document (html) loading 
 function pageFunction() {
   updateCells();
   setInterval(updateCells, 1000);
   $("#currentDay").text(today.format("dddd,"+" "+"MMMM DD")+ OrdinalIndicator(today.format("D")));
+  getLocalStorage();
+
 }
 
 
@@ -40,9 +60,7 @@ function pageFunction() {
 
 $( document ).ready(pageFunction());
 
-function activitySave(ID) {
-console.log (ID)
-  };
+
   
 //ID.innerHTML = localStorage.getItem(ID);
 //ID.innerHTML = document.getElementById(ID).value + " " + "Score:" + " " + finalScore.innerHTML
