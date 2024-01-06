@@ -40,8 +40,13 @@ function pageFunction() {
 
 $( document ).ready(pageFunction());
 
-
-
+function activitySave(ID) {
+console.log (ID)
+  };
+  
+//ID.innerHTML = localStorage.getItem(ID);
+//ID.innerHTML = document.getElementById(ID).value + " " + "Score:" + " " + finalScore.innerHTML
+//localStorage.setItem(ID, ID.innerHTML);
 
 
 //to DO LIST
